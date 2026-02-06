@@ -3,7 +3,7 @@ services:
     name: tg-streamer-bot
     env: docker
     plan: free
-    region: singapore # or frankfurt/oregon
+    # region: singapore # Removed to let Render pick the available free region
     envVars:
       - key: PORT
         value: 8080
