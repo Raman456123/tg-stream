@@ -1,0 +1,4 @@
+aiohttp
+pyrogram
+python-dotenv
+# TgCrypto (Removed to test pure python fallback)

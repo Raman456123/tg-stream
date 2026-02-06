@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: tg-streamer-bot
+    env: docker
+    plan: free
+    region: singapore # or frankfurt/oregon
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: BIN_CHANNEL
+        sync: false
+      - key: SLEEP_THRESHOLD
+        value: 60
+      - key: WORKERS
+        value: 4
+      - key: NO_PORT
+        value: false
+      - key: FQDN
+        sync: false # Set this to your Render URL after deployment (e.g. https://xyz.onrender.com)
+      - key: URL
+        sync: false # Same as FQDN but with trailing slash if needed by your logic
